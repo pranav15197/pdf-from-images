@@ -11,5 +11,6 @@ def create_pdf(pdfname, img_folder):
     with open(pdfname, 'wb+') as f:
         f.write(img2pdf.convert(images))
 
+
 if __name__ == "__main__":
     create_pdf('final.pdf', 'images')
